@@ -1,4 +1,4 @@
-Meetup
-======
+Lua Data Types
+==============
 
-Tutorial for accessing the Meetup JOSN API using Corona SDK
+Tutorial on the different data types in Lua.
