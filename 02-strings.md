@@ -8,12 +8,12 @@ In this lesson we will cover the following:
 * Escape Sequences
 * Concatenation
 * String Library
-  * Find patterns in a string
+  * Find and replace patterns in a string
   * Formatting a string
-  * Replace patterns in a string
   * Convert string to lower case
   * Convert string to upper case
   * Reverse a string
+  * Getting the length of a string
 
 Multiline Quotes
 ----------------
@@ -78,6 +78,13 @@ Find a pattern and substitute all occurances with a string.
     print(x:gsub("o", "."))
     => Hell. W.rld
     
+Format a string.
+
+    x = "Apples"
+    y = .5
+    print(string.format("%s costs $%.2f per pound", x, y))
+    => Apples costs $0.50 per pound.
+
 Convert a string to lower case.
 
     x = "Hello World"
@@ -89,6 +96,12 @@ Convert a string to upper case.
     x = "Hello World"
     print(x:upper)
     => HELLO WORLD
+    
+Reversing a string.
+
+    x = "Hello World"
+    print(x:reverse())
+    => dlroW olleH
     
 Get string length.
 
