@@ -101,10 +101,7 @@ Tables are like associative arrays. Array indexes may be numbers or strings.
     x = {'a', 'b', 'c'}
     print(x[1])
     => a
-    y = {}
-    y["name"] = "John"
-    y.age = 21
-    y["male"] = true
+    y = {name="John", age=21, is_male=true}
     print(y.name)
     => John
     print(y["name"])
@@ -126,3 +123,23 @@ The length of the table can be determined by using the `#` prefix.
     print(#x)
     => 3
     
+Querying Data Types
+-------------------
+
+You can query a variable for its data type by using the `type()` function.
+
+    a = nil
+    b = true
+    c = 10
+    d = "Hello World"
+    e = {one=1, two=2, three=3}
+    print(type(a))
+    => nil
+    print(type(b))
+    => boolean
+    print(type(c))
+    => number
+    print(type(d))
+    => string
+    print(type(e))
+    => table
