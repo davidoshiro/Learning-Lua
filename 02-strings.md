@@ -78,4 +78,22 @@ Find a pattern and substitute all occurances with a string.
     print(x:gsub("o", "."))
     => Hell. W.rld
     
+Convert a string to lower case.
+
+    x = "Hello World"
+    print(x:lower)
+    => hello world
     
+Convert a string to upper case.
+
+    x = "Hello World"
+    print(x:upper)
+    => HELLO WORLD
+    
+Get string length.
+
+    x = "Hello World"
+    print(x:len)
+    => 11
+    print(#x)
+    => 11
