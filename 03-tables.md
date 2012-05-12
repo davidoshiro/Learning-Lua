@@ -62,10 +62,16 @@ is like a field name. The function table.concat does not work with associative a
     return t["name"]
     => "David"
     
-To get the table size use the `table.getn()` function.
+Because associative arrays do not have numeric indexes getting the table size with `#t` is not
+possible.
 
-    return table.getn(t)
-    => 3
+    return #t
+    => 0
+    table.insert(t, "Hello")
+    return #t
+    => 1
+    return t[1]
+    => Hello
     
 To add a new element to our array:
 
