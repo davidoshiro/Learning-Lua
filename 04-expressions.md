@@ -49,4 +49,62 @@ Lua supports the following relational operators:
 * `==` (equal to)
 * `~=` (not equal to)
 
-    return 1
+    return 1 < 2
+    => true
+    return 2 > 1
+    => true
+    return string.len("David") <= 2
+    => false
+    return string.len("David") >= 9
+    => false
+    return 2.00 == 2
+    => true
+    return true ~= false
+    => true
+
+Logical Operators
+-----------------
+
+Logical operators are used to evaluate boolean values. Remember that anything other than `false` and `nil`
+are considered to be `true`.
+
+Lua supports the following logical operators:
+
+* `and`
+* `or`
+* `not`
+
+    return true and false
+    => false
+    return "Hello" and true
+    => true
+    return nil or true
+    => true
+    return 5 or false
+    => true
+    return not false
+    => true
+    return not "Hello"
+    => false
+    
+Logical Assignments
+-------------------
+
+Logical operators are most frequently used in conditional statements, but they can also be used in variable 
+assignments as well.
+
+    y = nil
+    x = y or "Hello"
+    return x
+    => "Hello"
+    
+The example above is the equivalent to `if y then x = y else x = "Hello" end`. 
+
+    x = 25
+    y = 100
+    min = (x < y) and x or y
+    return min
+    => 25
+
+The example above shows how we can assign the smaller value between `x` and `y` to `min`. Since `x` is less than `y`
+`min` is assigned the value of `x`. If `x` was not less than `y`, `min` would be assigned the value of `y`.
