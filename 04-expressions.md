@@ -20,6 +20,8 @@ Lua supports the following arithmetic operators:
 * `^` (exponentiation)
 * `-` (negation)
 
+Here are some examples:
+
     return 1 + 1 -- 1 plus 1
     => 2
     return 2 - 1 -- 2 minus 1
@@ -49,6 +51,8 @@ Lua supports the following relational operators:
 * `==` (equal to)
 * `~=` (not equal to)
 
+Here are some examples:
+
     return 1 < 2
     => true
     return 2 > 1
@@ -73,6 +77,8 @@ Lua supports the following logical operators:
 * `and`
 * `or`
 * `not`
+
+Here are some examples:
 
     return true and false
     => false
