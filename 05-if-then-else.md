@@ -42,4 +42,3 @@ blocks in addition to the `else` block.
 
 Even though code blocks consist of a single `print()` statement, you are not limited to any number of statements.
 You can even nest other `if` statements as code blocks in an `if` statement.
-  
