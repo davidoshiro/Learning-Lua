@@ -33,7 +33,7 @@ blocks in addition to the `else` block.
       print("This is an apple")
     elseif(x[2].taste == "sweet" and not x[2].is_juicy) then
       print("This is a banana")
-    elseif(x[2].taste == "sour" and x[2].is_juicy)
+    elseif(x[2].taste == "sour" and x[2].is_juicy) then
       print("This is a lemon")
     else
       print("Fruit is unknown")
