@@ -63,7 +63,7 @@ Strings can be of any length. Strings must be enclosed by double quotes, single 
     z = ""This isn't mine!" said Johnny."
     print(z) 
     => error
-    z = [["This isn't mine!" said Johnny."
+    z = [["This isn't mine!" said Johnny."]]
     print(z) 
     => "This isn't mine!", said Johnny.
     
